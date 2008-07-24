@@ -1,0 +1,133 @@
+/*
+	2007 Copyright Brian Smith <brian@scrappyhosting.com>. All Rights Reserved.
+	Parts borrowed from Drew McChesney over at JetAStudio.com
+	All Images and content MAY be reproduced or reused in any fashion.
+*/
+
+/* Reset browser defaults */
+* {margin:0;padding:0;font-family:Veranda,Helvetica,Ariel,sans-serif}
+
+/* --------- Global Styles ---------- */
+
+/*body {font:75%/1.4 Verdana, Arial, Helvetica, sans-serif;background-color:#151311;}*/
+body {font-size:12px;background-color:#290100;line-height:1.5}
+
+h1 {font-size:1.9em}
+h2 {font-size:1.7em}
+h3 {font-size:1.5em}
+h4 {font-size:1em}
+h5 {font-size:.7em}
+h6 {font-size:.4em}
+
+li.title {list-style:none}
+li.blank {list-style:none}
+ul.blank {list-style:none}
+
+.clear:after {content:".";display: block;height: 0;clear: both;visibility: hidden}
+
+
+.small {font-size:.92em}
+/* Hides from IE-mac \*/
+* html .clear {height: 1%;}
+.clear {display: block;}
+/* End hide from IE-mac */
+
+.nop {display:none}
+.title {font-weight:800}
+
+.tcenter {text-align:center}
+.acenter {margin-left:auto;margin-right:auto}
+
+/* ----------- Priorities ------------ */
+tr.highest.even {background-color:#FF9999!important}
+tr.highest.odd {background-color:#FF3333!important}
+
+tr.high.even {background-color:#FFFF00!important}
+tr.high.odd {background-color:#DDDD33!important}
+
+tr.low.even {background-color:#00FFFF!important}
+tr.low.odd {background-color:#33CDDD!important}
+
+tr.lowest.even {background-color:#FF00FF!important}
+tr.lowest.odd {background-color:#DD33DD!important}
+
+/* --------- Global Widgets ----------- */
+
+input[type=text], input[type=radio], input[type=checkbox], input[type=password], select, textarea
+	{font-family:Veranda,Arial, Helvetica;background-color:#d2d2d2;width:20em;border:.1em solid #2B271E;padding:.2em}
+textarea {width:30em !important}
+select {padding:.1em!important}
+
+input[type=button], input[type=submit], input[type=reset] {
+	background-color:#d4d4d4;
+	font-family:Veranda, Arial, Helvetica;
+
+	border-top:.1em inset #484c4b;
+	border-left:.1em inset #484c4b;
+	border-right:.1em outset #161717;
+	border-bottom:.1em outset #161717;
+
+	width:10em;
+	height:1.3em;
+	}
+embed[type=application/x-shockwave-flash] {height:35em; width:42.5em;}
+
+div.even {background-color:#EFEFEF;border:.5em solid black;padding:1em}
+div.odd {padding:1em}
+
+
+table.border {border:.2em solid #0F0F0F;}
+	table.border th {border-bottom:.1em solid #0F0F0F;}
+tr.even {background-color:#DDD !important}
+tr.even td, tr.odd td {padding:.5em}
+tr.even:hover, tr.odd:hover {color:lime;background-color:black !important;cursor:pointer}
+
+/* Form Styles */
+fieldset.forminput {border:none;display:block;margin:1em 0;padding:.5em}
+	fieldset.forminput div {margin:1em;padding-bottom:1em}
+	fieldset.forminput label {display:inline;width:12em;margin:.2em 0 0 0 !important;float:left;text-align:left;display:block;font-weight:800}
+	fieldset.forminput div.rightcol2 {margin:0 .5em .5em 15em;padding:0;width:26.5em;line-height:2em}
+	/* Hides from IE5-mac \*/
+	* html fieldset.forminput div.rightcol2 {margin:0 0 0 .5em}
+	/* End hide from IE5-mac */
+
+/* vlist */
+ul.vlist {margin:0;padding:0;list-style:none;}
+	ul.vlist li {margin:0;padding:.6em .1em .6em .1em;display:inline;}
+	ul.vlist li.title {font-size:1.3em!important;font-weight:800;color:#070707}
+	ul.vlist li.devide:after {content:"|";font-size:1em!important;font-weight:100!important;margin-left:1em}
+
+/* --------- Element Styles ----------- */
+
+a {color:#0D94CE;text-decoration:none}
+a:hover {text-decoration:none;color:#2d2d2d}
+
+p {margin-bottom:1em}
+
+
+/* --------- Layout Styles ------------ */
+#container-wrap {min-height:55em;background-color:#FFF9EC;border:.9em solid #1E1B15}
+	#container {width:70em;margin-left:auto;margin-right:auto;margin-top:3em;background-color:#FFF9EC;min-height:55em;border:.1em solid silver}
+
+#header {font-family:Veranda,Helvetica,Ariel;font-size:.92em;padding:1em;border-bottom:.1em solid #1E1B15;}
+	#header h1 {font-family:fantasy}
+	#header form {display:inline;}
+
+#header-menu {width:100%;border-bottom:.1em solid #1E1B15;margin-bottom:1.2em}
+	#header-menu li {padding-left:1.4em;}
+	#header-menu a {text-decoration:none;}
+		#header-menu a.active {font-weight:800;color:#2d2d2d}
+
+#content-wrap {width:70em;float:left;}
+	#content {margin-left:1em;margin-right:1em;}
+
+#rightcolumn-wrap {width:14em;float:right}
+	#rightcolumn ul {list-style:none;margin-bottom:2em}
+	#rightcolumn .title {border-bottom:.1em solid silver}
+
+#footer-wrap {width:100%;clear:both;}
+	#footer {width:60em;height:6em;margin:0 auto 0 auto;color:#ddd}
+
+dl.comments dt {margin-top:1em}
+dl.comments dd {margin-bottom:2em}
+

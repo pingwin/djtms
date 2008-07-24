@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/tickets/create" method="post">
+<fieldset class="forminput">
+{{ form.as_p }}
+<p>
+ 	<label for="id_projects">Assign to Projects:</label>
+	<select multiple="multiple" name="projects" id="id_projects">
+	  {% for project in projects %}
+	  <option value="{{ project.id }}">{{ project.name }}</option>
+	  {% endfor %}
+	 </select>
+</p>
+<p>
+	<input type="submit" value="Create Ticket" />
+</p>
+</fieldset>
+</form>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block submenu %}
+<div class="menu">
+	<span>My Account</span>
+</div>
+<ul class="sub">
+	<li><a href="/accounts/profile/">Edit Profile</a></li>
+	<li><a href="/accounts/changepassword/">Change Password</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+
+<form action="." method="post">
+
+<fieldset class="forminput">
+<div class="title">General</div>
+<div>
+	<label>Username:</label>
+	<strong>{{ user }}</strong>
+</div>
+{{ form.as_p }}
+
+<div>
+	<input type="submit" value="Save" />
+</div>
+
+</fieldset>
+
+
+</form>
+{% endblock %}
+

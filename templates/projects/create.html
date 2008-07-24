@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/projects/create" method="post">
+<fieldset class="forminput">
+<div>
+	<label for="name">New Project Name:</label>
+	<input type="text" name="name" id="name" value="{{ name }}" />
+</div>
+
+<div>
+ 	<label for="create_another">Create Another?</label>
+	<input type="checkbox" name="create_another" id="create_another" value="1" />
+</div>
+
+<div>
+  	<input type="submit" value="Create" />
+</div>
+</fieldset>
+</form>
+
+{% endblock %}

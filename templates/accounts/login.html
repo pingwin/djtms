@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+{% if form.has_errors %}
+<p>Account not validated.</p>
+{% endif %}
+
+<h1>Login</h1>
+
+
+<form action="." method="post">
+
+<input type="hidden" name="next" value="{{ next }}" />
+
+<fieldset class="forminput">
+<div>
+	<label for="id_username">Username:</label>
+	{{ form.username }}
+</div>
+<div>
+	<label for="password">Password:</label>
+	<input type="password" id="id_password" class="vPasswordField required" name="password" size="15" value="" maxlength="30" />
+</div>
+<div>
+	<input type="submit" value="Login" />
+</div>
+</fieldset>
+</form>
+
+{% endblock %}
